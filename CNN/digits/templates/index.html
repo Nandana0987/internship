@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Digit Classifier</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:url('/static/bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.container{
+
+    width:500px;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(15px);
+
+    color:white;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+
+}
+h1{
+
+margin-bottom:20px;
+
+color:aliceblue;
+
+}
+
+input[type=file]{
+
+margin:20px 0;
+
+}
+
+button{
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:10px;
+
+background:#667eea;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#5a67d8;
+
+}
+
+#preview{
+
+margin-top:20px;
+
+width:200px;
+
+height:200px;
+
+object-fit:contain;
+
+display:none;
+
+border:2px solid #ddd;
+
+padding:10px;
+
+border-radius:10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Digit Recognition Using CNN</h1>
+
+<form
+action="/predict"
+method="post"
+enctype="multipart/form-data">
+
+<input
+type="file"
+name="file"
+accept="image/*"
+required
+onchange="previewImage(event)">
+
+<br>
+
+<img id="preview">
+
+<br><br>
+
+<button type="submit">
+
+Predict Digit
+
+</button>
+
+</form>
+
+</div>
+
+<script>
+
+function previewImage(event){
+
+let preview =
+document.getElementById("preview");
+
+preview.src =
+URL.createObjectURL(
+event.target.files[0]
+);
+
+preview.style.display =
+"block";
+
+}
+
+</script>
+
+</body>
+</html>

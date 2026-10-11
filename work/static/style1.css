@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("house.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+
+     font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 700px;
+    margin: auto;
+}
+
+input, select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    grid-column: span 2;
+    padding: 12px;
+    background: #00c853;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00a844;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #ffeb3b;
+}

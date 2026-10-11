@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Room Monitor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+        <a class="navbar-brand"
+           href="/">
+           Smart Room Monitor
+        </a>
+
+        <div>
+
+            <a href="/"
+               class="btn btn-light me-2">
+               Dashboard
+            </a>
+
+            <a href="/records"
+               class="btn btn-light me-2">
+               Records
+            </a>
+
+            <a href="/analytics"
+               class="btn btn-light">
+               Analytics
+            </a>
+
+        </div>
+
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+    {% block content %}
+    {% endblock %}
+
+</div>
+
+<div class="footer">
+    <hr>
+    Smart Room Occupancy Monitoring System
+</div>
+
+</body>
+</html>

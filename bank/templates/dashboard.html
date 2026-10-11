@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🏦 Dashboard</title>
+</head>
+<body>
+
+<h1>🏦 Welcome to SecureBank</h1>
+
+<button onclick="getBalance()">💰 Balance</button>
+<button onclick="getTransactions()">📊 Transactions</button>
+
+<div id="output"></div>
+
+<script>
+function getBalance(){
+    fetch("/balance")
+    .then(res=>res.json())
+    .then(data=>{
+        document.getElementById("output").innerHTML =
+        "💰 Balance: ₹" + data.balance;
+    });
+}
+
+function getTransactions(){
+    fetch("/transactions")
+    .then(res=>res.json())
+    .then(data=>{
+        let html = "<h3>Transactions</h3>";
+        data.data.forEach(t=>{
+            html += `<p>${t[0]} : ₹${t[1]}</p>`;
+        });
+        document.getElementById("output").innerHTML = html;
+    });
+}
+</script>
+
+</body>
+</html>

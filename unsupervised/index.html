@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container-fluid">
+<div class="row">
+
+<!-- SIDEBAR -->
+<div class="col-lg-4 sidebar">
+
+    <h2 class="text-center mb-4">Customer Churn</h2>
+
+    <form action="/predict" method="POST">
+
+        <select class="form-control mb-3" name="gender">
+            {% for g in gender_options %}
+            <option value="{{ g }}">{{ g }}</option>
+            {% endfor %}
+        </select>
+
+        <input class="form-control mb-3" type="number" name="age" placeholder="Age">
+
+        <input class="form-control mb-3" type="number" name="tenure" placeholder="Tenure">
+
+        <input class="form-control mb-3" type="number" name="usage" placeholder="Usage Frequency">
+
+        <input class="form-control mb-3" type="number" name="support" placeholder="Support Calls">
+
+        <input class="form-control mb-3" type="number" name="delay" placeholder="Payment Delay">
+
+        <select class="form-control mb-3" name="subscription">
+            {% for s in subscription_options %}
+            <option value="{{ s }}">{{ s }}</option>
+            {% endfor %}
+        </select>
+
+        <select class="form-control mb-3" name="contract">
+            {% for c in contract_options %}
+            <option value="{{ c }}">{{ c }}</option>
+            {% endfor %}
+        </select>
+
+        <input class="form-control mb-3" type="number" step="0.01" name="spend" placeholder="Total Spend">
+
+        <input class="form-control mb-3" type="number" name="interaction" placeholder="Last Interaction">
+
+        <button class="btn btn-primary w-100">Predict</button>
+
+    </form>
+
+</div>
+
+<!-- MAIN -->
+<div class="col-lg-8 main-content">
+
+    <div class="hero-card">
+        <h1>Customer Churn Prediction Dashboard</h1>
+        <p>ML powered Logistic Regression Model</p>
+    </div>
+
+    {% if prediction %}
+
+    <div class="card result-card mt-4 p-4 text-center">
+
+        <h2>{{ prediction }}</h2>
+        <h3>{{ probability }}% Confidence</h3>
+
+        <!-- CHART -->
+        <canvas id="churnChart" style="max-width:300px;margin:auto;"></canvas>
+
+        <script>
+const prob = {{ probability|float }};
+const stay = 100 - prob;
+
+new Chart(document.getElementById('churnChart'), {
+    type: 'doughnut',
+    data: {
+        labels: ['Churn', 'Stay'],
+        datasets: [{
+            data: [prob, stay],
+            backgroundColor: ['red', 'green']
+        }]
+    }
+});
+</script>
+                   
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

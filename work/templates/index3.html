@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Food Delivery Time Prediction
+</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',
+filename='style3.css') }}">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>
+🚚 Food Delivery Time Prediction System
+</h1>
+
+<p>
+Predict Delivery Time using Machine Learning
+</p>
+
+</div>
+
+<div class="card">
+
+<form action="/predict"
+method="POST">
+
+<input type="number"
+step="0.1"
+name="Distance_km"
+placeholder="Distance (KM)"
+required>
+
+<input type="number"
+step="0.1"
+name="Preparation_Time_min"
+placeholder="Preparation Time (Minutes)"
+required>
+
+<input type="number"
+step="0.1"
+name="Courier_Experience_yrs"
+placeholder="Courier Experience (Years)"
+required>
+
+<select name="Weather">
+<option>Clear</option>
+<option>Rainy</option>
+<option>Foggy</option>
+<option>Windy</option>
+</select>
+
+<select name="Traffic_Level">
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+</select>
+
+<select name="Time_of_Day">
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Evening</option>
+<option>Night</option>
+</select>
+
+<select name="Vehicle_Type">
+<option>Bike</option>
+<option>Scooter</option>
+</select>
+
+<button type="submit">
+Predict Delivery Time
+</button>
+
+</form>
+
+{% if prediction %}
+
+<div class="result-box">
+
+<h2>
+Predicted Delivery Time
+</h2>
+
+<h1>
+{{ prediction }} Minutes
+</h1>
+
+</div>
+
+<div class="status-box">
+
+<h2>
+{{ status }}
+</h2>
+
+</div>
+
+{% endif %}
+
+<div class="accuracy-box">
+
+<h3>
+Model Accuracy
+</h3>
+
+<h2>
+{{ accuracy }}%
+</h2>
+
+</div>
+
+<div class="chart-container">
+
+<canvas id="accuracyChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const ctx =
+document.getElementById(
+'accuracyChart'
+);
+
+new Chart(ctx, {
+
+type:'doughnut',
+
+data:{
+labels:[
+'Accuracy',
+'Remaining'
+],
+
+datasets:[{
+
+data:[
+{{ accuracy }},
+100 - {{ accuracy }}
+],
+
+borderWidth:0
+
+}]
+},
+
+options:{
+
+responsive:true,
+
+plugins:{
+
+legend:{
+
+labels:{
+color:'white'
+}
+
+}
+
+}
+
+}
+
+});
+
+</script>
+
+</body>
+</html>

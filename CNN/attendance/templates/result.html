@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Attendance Result</title>
+
+    <style>
+
+        body{
+            font-family:Arial;
+            background:#f4f6f9;
+        }
+
+        .box{
+            width:500px;
+            margin:80px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            text-align:center;
+            box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .success{
+            color:green;
+        }
+
+        .error{
+            color:red;
+        }
+
+        a{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 15px;
+            background:#3498db;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+{% if success %}
+
+<h2 class="success">
+Attendance Marked Successfully
+</h2>
+
+<hr>
+
+<h3>Employee ID</h3>
+<p>{{ employee_id }}</p>
+
+<h3>Name</h3>
+<p>{{ employee_name }}</p>
+
+<h3>Date</h3>
+<p>{{ date }}</p>
+
+<h3>Time</h3>
+<p>{{ time }}</p>
+
+<h3>Confidence</h3>
+<p>{{ confidence }} %</p>
+
+{% else %}
+
+<h2 class="error">
+{{ message }}
+</h2>
+
+{% endif %}
+
+<a href="/attendance">
+Back
+</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+/* ---------------- GLOBAL BACKGROUND ---------------- */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+
+    background: url("/static/university_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* dark overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+/* ---------------- CHAT CONTAINER ---------------- */
+.chat-container {
+    position: relative;
+    z-index: 1;
+
+    width: 420px;
+    height: 650px;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ---------------- HEADER ---------------- */
+.header {
+    padding: 15px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ---------------- CHAT BOX ---------------- */
+#chatbox {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* ---------------- MESSAGES ---------------- */
+.msg {
+    margin: 8px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.user {
+    background: #4facfe;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bot {
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/* ---------------- INPUT AREA ---------------- */
+.input-area {
+    display: flex;
+    padding: 10px;
+    gap: 8px;
+    background: rgba(0,0,0,0.2);
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* ---------------- BUTTON ---------------- */
+button {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #6a11cb;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* ---------------- OPTIONS ---------------- */
+#options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+}
+
+#options button {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* hidden state */
+.hidden {
+    display: none;
+}
+
+/* typing container */
+.typing {
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+    align-items: center;
+}
+
+/* animated dots */
+.typing span {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+.typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: translateY(0);
+        opacity: 0.3;
+    }
+    40% {
+        transform: translateY(-6px);
+        opacity: 1;
+    }
+}
+
+/* ---------------- CARD CONTAINER ---------------- */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* ---------------- COURSE CARD ---------------- */
+.course-card {
+    width: 140px;
+    padding: 12px;
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+
+    color: white;
+    text-align: center;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.course-card:hover {
+    transform: scale(1.08);
+    background: rgba(255,255,255,0.25);
+}
+
+/* title */
+.course-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* subtitle */
+.course-sub {
+    font-size: 11px;
+    opacity: 0.8;
+    margin-top: 5px;
+}

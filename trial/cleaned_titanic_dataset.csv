@@ -1,0 +1,562 @@
+passengerid,survived,pclass,name,sex,age,sibsp,parch,ticket,fare,cabin,embarked
+1,0,3,"braund, mr. owen harris",male,22,1,0,409,7.25,17,2
+3,1,3,"heikkinen, miss. laina",female,26,0,0,512,7.925,17,2
+4,1,1,"futrelle, mrs. jacques heath (lily may peel)",female,35,1,0,32,53.1,23,2
+5,0,3,"allen, mr. william henry",male,35,0,0,366,8.05,17,2
+6,0,3,"moran, mr. james",male,28,0,0,196,8.4583,17,1
+7,0,1,"mccarthy, mr. timothy j",male,54,0,0,49,51.8625,47,2
+10,1,2,"nasser, mrs. nicholas (adele achem)",female,14,1,0,83,30.0708,17,0
+13,0,3,"saundercock, mr. william henry",male,20,0,0,421,8.05,17,2
+15,0,3,"vestrom, miss. hulda amanda adolfina",female,14,0,0,320,7.8542,17,2
+18,1,2,"williams, mr. charles eugene",male,28,0,0,100,13.0,17,2
+19,0,3,"vander planke, mrs. julius (emelia maria vandemoortele)",female,31,1,0,219,18.0,17,2
+20,1,3,"masselmani, mrs. fatima",female,28,0,0,125,7.225,17,0
+21,0,2,"fynney, mr. joseph j",male,35,0,0,89,26.0,17,2
+22,1,2,"beesley, mr. lawrence",male,34,0,0,101,13.0,39,2
+23,1,3,"mcgowan, miss. anna ""annie""",female,15,0,0,199,8.0292,17,1
+24,1,1,"sloper, mr. william thompson",male,28,0,0,27,35.5,8,2
+27,0,3,"emir, mr. farred chehab",male,28,0,0,121,7.225,17,0
+29,1,3,"o'dwyer, miss. ellen ""nellie""",female,28,0,0,204,7.8792,17,1
+30,0,3,"todoroff, mr. lalio",male,28,0,0,272,7.8958,17,2
+31,0,1,"uruchurtu, don. manuel e",male,40,0,0,459,27.7208,17,0
+33,1,3,"glynn, miss. mary agatha",female,28,0,0,209,7.75,17,1
+36,0,1,"holverson, mr. alexander oskar",male,42,1,0,28,52.0,17,2
+37,1,3,"mamee, mr. hanna",male,28,0,0,138,7.2292,17,0
+38,0,3,"cann, mr. ernest charles",male,21,0,0,401,8.05,17,2
+39,0,3,"vander planke, miss. augusta maria",female,18,2,0,220,18.0,17,2
+40,1,3,"nicola-yarred, miss. jamila",female,14,1,0,126,11.2417,17,0
+41,0,3,"ahlin, mrs. johan (johanna persdotter larsson)",female,40,1,0,394,9.475,17,2
+42,0,2,"turpin, mrs. william john robert (dorothy ann wonnacott)",female,27,1,0,35,21.0,17,2
+43,0,3,"kraeff, mr. theodor",male,28,0,0,301,7.8958,17,0
+45,1,3,"devaney, miss. margaret delia",female,19,0,0,203,7.8792,17,1
+46,0,3,"rogers, mr. william john",male,28,0,0,464,8.05,17,2
+47,0,3,"lennon, mr. denis",male,28,1,0,357,15.5,17,1
+48,1,3,"o'driscoll, miss. bridget",female,28,0,0,44,7.75,17,1
+49,0,3,"samaan, mr. youssef",male,28,2,0,128,21.6792,17,0
+50,0,3,"arnold-franchi, mrs. josef (josefine franchi)",female,18,1,0,287,17.8,17,2
+52,0,3,"nosworthy, mr. richard cater",male,21,0,0,408,7.8,17,2
+54,1,2,"faunthorpe, mrs. lizzie (elizabeth anne wilkinson)",female,29,1,0,165,26.0,17,2
+56,1,1,"woolner, mr. hugh",male,28,0,0,53,35.5,30,2
+57,1,2,"rugg, miss. emily",female,21,0,0,436,10.5,17,2
+58,0,3,"novel, mr. mansouer",male,28,0,0,147,7.2292,17,0
+61,0,3,"sirayanian, mr. orsen",male,22,0,0,133,7.2292,17,0
+65,0,1,"stewart, mr. albert a",male,28,0,0,460,27.7208,17,0
+67,1,2,"nye, mrs. (elizabeth ramell)",female,29,0,0,434,10.5,53,2
+68,0,3,"crease, mr. ernest james",male,19,0,0,468,8.1583,17,2
+70,0,3,"kink, mr. vincenz",male,26,2,0,192,8.6625,17,2
+71,0,2,"jenkin, mr. stephen curnow",male,32,0,0,437,10.5,17,2
+74,0,3,"chronopoulos, mr. apostolos",male,26,1,0,139,14.4542,17,0
+76,0,3,"moen, mr. sigurd hansen",male,25,0,0,257,7.65,52,2
+77,0,3,"staneff, mr. ivan",male,28,0,0,265,7.8958,17,2
+78,0,3,"moutal, mr. rahamin haim",male,28,0,0,367,8.05,17,2
+80,1,3,"dowdell, miss. elizabeth",female,30,0,0,335,12.475,17,2
+81,0,3,"waelens, mr. achille",male,22,0,0,222,9.0,17,2
+82,1,3,"sheerlinck, mr. jan baptist",male,29,0,0,228,9.5,17,2
+83,1,3,"mcdermott, miss. brigdet delia",female,28,0,0,201,7.7875,17,1
+84,0,1,"carrau, mr. francisco m",male,28,0,0,20,47.1,17,2
+85,1,2,"ilett, miss. bertha",female,17,0,0,480,10.5,17,2
+88,0,3,"slocovski, mr. selman francis",male,28,0,0,495,8.05,17,2
+90,0,3,"celotti, mr. francesco",male,24,0,0,216,8.05,17,2
+91,0,3,"christmann, mr. emil",male,29,0,0,217,8.05,17,2
+92,0,3,"andreasson, mr. paul edvin",male,20,0,0,252,7.8542,17,2
+96,0,3,"shorney, mr. charles joseph",male,28,0,0,369,8.05,17,2
+100,0,2,"kantor, mr. sinai",male,34,1,0,99,26.0,17,2
+101,0,3,"petranec, miss. matilda",female,28,0,0,294,7.8958,17,2
+102,0,3,"petroff, mr. pastcho (""pentcho"")",male,28,0,0,271,7.8958,17,2
+104,0,3,"johansson, mr. gustaf joel",male,33,0,0,392,8.6542,17,2
+105,0,3,"gustafsson, mr. anders vilhelm",male,37,2,0,170,7.925,17,2
+106,0,3,"mionoff, mr. stoytcho",male,28,0,0,264,7.8958,17,2
+107,1,3,"salkjelsvik, miss. anna kristine",female,21,0,0,215,7.65,17,2
+108,1,3,"moss, mr. albert johan",male,28,0,0,176,7.775,17,2
+109,0,3,"rekic, mr. tido",male,38,0,0,298,7.8958,17,2
+110,1,3,"moran, miss. bertha",female,28,1,0,364,24.15,17,1
+111,0,1,"porter, mr. walter chamberlain",male,47,0,0,0,52.0,21,2
+112,0,3,"zabour, miss. hileni",female,14,1,0,131,14.4542,17,0
+113,0,3,"barton, mr. david john",male,22,0,0,195,8.05,17,2
+114,0,3,"jussila, miss. katriina",female,20,1,0,380,9.825,17,2
+115,0,3,"attalah, miss. malake",female,17,0,0,118,14.4583,17,0
+116,0,3,"pekoniemi, mr. edvard",male,21,0,0,509,7.925,17,2
+118,0,2,"turpin, mr. william john robert",male,29,1,0,35,21.0,17,2
+122,0,3,"moore, mr. leonard charles",male,28,0,0,425,8.05,17,2
+123,0,2,"nasser, mr. nicholas",male,32,1,0,83,30.0708,17,0
+124,1,2,"webber, miss. susan",female,32,0,0,150,13.0,42,2
+126,1,3,"nicola-yarred, master. elias",male,12,1,0,126,11.2417,17,0
+127,0,3,"mcmahon, mr. martin",male,28,0,0,358,7.75,17,1
+128,1,3,"madsen, mr. fridtjof arne",male,24,0,0,426,7.1417,17,2
+130,0,3,"ekstrom, mr. johan",male,45,0,0,233,6.975,17,2
+131,0,3,"drazenoic, mr. jozef",male,33,0,0,290,7.8958,17,0
+132,0,3,"coelho, mr. domingos fernandeo",male,20,0,0,483,7.05,17,2
+133,0,3,"robins, mrs. alexander a (grace charity laury)",female,47,1,0,423,14.5,17,2
+134,1,2,"weisz, mrs. leopold (mathilde francoise pede)",female,29,1,0,67,26.0,17,2
+135,0,2,"sobey, mr. samuel james hayden",male,25,0,0,433,13.0,17,2
+136,0,2,"richard, mr. emile",male,23,0,0,474,15.0458,17,0
+138,0,1,"futrelle, mr. jacques heath",male,37,1,0,32,53.1,23,2
+139,0,3,"osen, mr. olaf elon",male,16,0,0,391,9.2167,17,2
+142,1,3,"nysten, miss. anna sofia",female,22,0,0,245,7.75,17,2
+143,1,3,"hakkarainen, mrs. pekka pietari (elin matilda dolck)",female,24,1,0,511,15.85,17,2
+144,0,3,"burke, mr. jeremiah",male,19,0,0,339,6.75,17,1
+145,0,2,"andrew, mr. edgardo samuel",male,18,0,0,70,11.5,17,2
+147,1,3,"andersson, mr. august edvard (""wennerstrom"")",male,27,0,0,313,7.7958,17,2
+150,0,2,"byles, rev. thomas roussel davids",male,42,0,0,96,13.0,17,2
+151,0,2,"bateman, rev. robert james",male,51,0,0,467,12.525,17,2
+155,0,3,"olsen, mr. ole martin",male,28,0,0,447,7.3125,17,2
+157,1,3,"gilnagh, miss. katherine ""katie""",female,16,0,0,323,7.7333,17,1
+158,0,3,"corn, mr. harry",male,30,0,0,497,8.05,17,2
+159,0,3,"smiljanic, mr. mile",male,28,0,0,180,8.6625,17,2
+162,1,2,"watt, mrs. james (elizabeth ""bessie"" inglis milne)",female,40,0,0,438,15.75,17,2
+163,0,3,"bengtsson, mr. john viktor",male,26,0,0,238,7.775,17,2
+164,0,3,"calic, mr. jovo",male,17,0,0,187,8.6625,17,2
+169,0,1,"baumann, mr. john d",male,28,0,0,450,25.925,17,2
+174,0,3,"sivola, mr. antti wilhelm",male,21,0,0,502,7.925,17,2
+178,0,1,"isham, miss. ann elizabeth",female,50,0,0,457,28.7125,29,0
+179,0,2,"hale, mr. reginald",male,30,0,0,112,13.0,17,2
+180,0,3,"leonard, mr. lionel",male,36,0,0,448,0.0,17,2
+182,0,2,"pernot, mr. rene",male,28,0,0,473,15.05,17,0
+186,0,1,"rood, mr. hugh roscoe",male,28,0,0,23,50.0,6,2
+187,1,3,"o'brien, mrs. thomas (johanna ""hannah"" godfrey)",female,28,1,0,355,15.5,17,1
+188,1,1,"romaine, mr. charles hallace (""mr c rolmane"")",male,45,0,0,6,26.55,17,2
+190,0,3,"turcin, mr. stjepan",male,36,0,0,296,7.8958,17,2
+191,1,2,"pinsky, mrs. (rosa)",female,32,0,0,74,13.0,17,2
+192,0,2,"carbines, mr. william",male,19,0,0,157,13.0,17,2
+193,1,3,"andersen-jensen, miss. carla christine nielsine",female,19,1,0,314,7.8542,17,2
+195,1,1,"brown, mrs. james joseph (margaret tobin)",female,44,0,0,461,27.7208,11,0
+197,0,3,"mernagh, mr. robert",male,28,0,0,353,7.75,17,1
+199,1,3,"madigan, miss. margaret ""maggie""",female,28,0,0,356,7.75,17,1
+200,0,2,"yrois, miss. henriette (""mrs harbeck"")",female,24,0,0,107,13.0,17,2
+201,0,3,"vande walle, mr. nestor cyriel",male,28,0,0,224,9.5,17,2
+203,0,3,"johanson, mr. jakob alfred",male,34,0,0,167,6.4958,17,2
+204,0,3,"youseff, mr. gerious",male,45,0,0,119,7.225,17,0
+205,1,3,"cohen, mr. gurshon ""gus""",male,18,0,0,416,8.05,17,2
+207,0,3,"backstrom, mr. karl alfred",male,32,1,0,172,15.85,17,2
+208,1,3,"albimona, mr. nassef cassem",male,26,0,0,148,18.7875,17,0
+209,1,3,"carr, miss. helen ""ellen""",female,16,0,0,346,7.75,17,1
+210,1,1,"blank, mr. henry",male,40,0,0,12,31.0,5,0
+211,0,3,"ali, mr. ahmed",male,24,0,0,485,7.05,17,2
+212,1,2,"cameron, miss. clear annie",female,35,0,0,445,21.0,17,2
+213,0,3,"perkin, mr. john henry",male,22,0,0,412,7.25,17,2
+214,0,2,"givard, mr. hans kristensen",male,30,0,0,109,13.0,17,2
+215,0,3,"kiernan, mr. philip",male,28,1,0,344,7.75,17,1
+217,1,3,"honkanen, miss. eliina",female,27,0,0,513,7.925,17,2
+218,0,2,"jacobsohn, mr. sidney samuel",male,42,1,0,91,27.0,17,2
+220,0,2,"harris, mr. walter",male,30,0,0,519,10.5,17,2
+221,1,3,"sunderland, mr. victor francis",male,16,0,0,496,8.05,17,2
+222,0,2,"bracken, mr. james h",male,27,0,0,62,13.0,17,2
+223,0,3,"green, mr. george henry",male,51,0,0,60,8.05,17,2
+224,0,3,"nenkoff, mr. christo",male,28,0,0,285,7.8958,17,2
+226,0,3,"berglund, mr. karl ivar sven",male,22,0,0,463,9.35,17,2
+227,1,2,"mellors, mr. william john",male,19,0,0,515,10.5,17,2
+228,0,3,"lovell, mr. john hall (""henry"")",male,20,0,0,411,7.25,17,2
+229,0,2,"fahlstrom, mr. arne jonas",male,18,0,0,77,13.0,17,2
+232,0,3,"larsson, mr. bengt edvin",male,29,0,0,237,7.775,17,2
+235,0,2,"leyson, mr. robert william norman",male,24,0,0,435,10.5,17,2
+236,0,3,"harknett, miss. alice phoebe",female,28,0,0,518,7.55,17,2
+237,0,2,"hold, mr. stephen",male,44,1,0,134,26.0,17,2
+239,0,2,"pengelly, mr. frederick william",male,19,0,0,161,10.5,17,2
+240,0,2,"hunt, mr. george henry",male,33,0,0,479,12.275,17,2
+241,0,3,"zabour, miss. thamine",female,28,1,0,131,14.4542,17,0
+242,1,3,"murphy, miss. katherine ""kate""",female,28,1,0,345,15.5,17,1
+243,0,2,"coleridge, mr. reginald charles",male,29,0,0,517,10.5,17,2
+244,0,3,"maenpaa, mr. matti alexanteri",male,22,0,0,501,7.125,17,2
+245,0,3,"attalah, mr. sleiman",male,30,0,0,146,7.225,17,0
+247,0,3,"lindahl, miss. agda thorilda viktoria",female,25,0,0,240,7.775,17,2
+250,0,2,"carter, rev. ernest courtenay",male,54,1,0,93,26.0,17,2
+251,0,3,"reed, mr. james george",male,28,0,0,327,7.25,17,2
+254,0,3,"lobb, mr. william arthur",male,30,1,0,422,16.1,17,2
+261,0,3,"smith, mr. thomas",male,28,0,0,375,7.75,17,1
+264,0,1,"harrison, mr. william",male,40,0,0,11,0.0,16,2
+265,0,3,"henry, miss. delia",female,28,0,0,372,7.75,17,1
+266,0,2,"reeves, mr. david",male,36,0,0,431,10.5,17,2
+268,1,3,"persson, mr. ernst ulrik",male,25,1,0,246,7.775,17,2
+271,0,1,"cairns, mr. alexander",male,28,0,0,31,31.0,17,2
+272,1,3,"tornquist, mr. william henry",male,25,0,0,448,0.0,17,2
+275,1,3,"healy, miss. hanora ""nora""",female,28,0,0,360,7.75,17,1
+277,0,3,"lindblom, miss. augusta charlotta",female,45,0,0,241,7.75,17,2
+278,0,2,"parkes, mr. francis ""frank""",male,28,0,0,85,0.0,17,2
+282,0,3,"olsson, mr. nils johan goransson",male,28,0,0,251,7.8542,17,2
+283,0,3,"de pelsmaeker, mr. alfons",male,16,0,0,227,9.5,17,2
+284,1,3,"dorking, mr. edward arthur",male,19,0,0,419,8.05,17,2
+285,0,1,"smith, mr. richard william",male,28,0,0,19,26.0,3,2
+286,0,3,"stankovic, mr. ivan",male,33,0,0,288,8.6625,17,0
+287,1,3,"de mulder, mr. theodore",male,30,0,0,225,9.5,17,2
+288,0,3,"naidenoff, mr. penko",male,22,0,0,263,7.8958,17,2
+289,1,2,"hosono, mr. masabumi",male,42,0,0,84,13.0,17,2
+290,1,3,"connolly, miss. kate",female,22,0,0,359,7.75,17,1
+293,0,2,"levy, mr. rene jacques",male,36,0,0,477,12.875,32,0
+294,0,3,"haas, miss. aloisia",female,24,0,0,286,8.85,17,2
+295,0,3,"mineff, mr. ivan",male,24,0,0,284,7.8958,17,2
+296,0,1,"lewy, mr. ervin g",male,28,0,0,462,27.7208,17,0
+297,0,3,"hanna, mr. mansour",male,23,0,0,145,7.2292,17,0
+299,1,1,"saalfeld, mr. adolphe",male,28,0,0,56,30.5,20,2
+301,1,3,"kelly, miss. anna katherine ""annie kate""",female,28,0,0,400,7.75,17,1
+302,1,3,"mccoy, mr. bernard",male,28,2,0,342,23.25,17,1
+303,0,3,"johnson, mr. william cahoone jr",male,19,0,0,448,0.0,17,2
+304,1,2,"keane, miss. nora a",female,28,0,0,65,12.35,42,1
+305,0,3,"williams, mr. howard hugh ""harry""",male,28,0,0,413,8.05,17,2
+309,0,2,"abelson, mr. samuel",male,30,1,0,449,24.0,17,0
+314,0,3,"hendekovic, mr. ignjac",male,28,0,0,292,7.8958,17,2
+316,1,3,"nilsson, miss. helmina josefina",female,26,0,0,254,7.8542,17,2
+317,1,2,"kantor, mrs. sinai (miriam sternin)",female,24,1,0,99,26.0,17,2
+318,0,2,"moraweck, dr. ernest",male,54,0,0,162,14.0,17,2
+321,0,3,"dennis, mr. samuel",male,22,0,0,410,7.25,17,2
+322,0,3,"danoff, mr. yoto",male,27,0,0,275,7.8958,17,2
+323,1,2,"slayter, miss. hilda mary",female,30,0,0,76,12.35,17,1
+328,1,2,"ball, mrs. (ada e hall)",female,36,0,0,159,13.0,32,2
+331,1,3,"mccoy, miss. agnes",female,28,2,0,342,23.25,17,1
+332,0,1,"partner, mr. austen",male,45,0,0,15,28.5,24,2
+334,0,3,"vander planke, mr. leo edmondus",male,16,2,0,220,18.0,17,2
+336,0,3,"denkoff, mr. mitto",male,28,0,0,280,7.8958,17,2
+339,1,3,"dahl, mr. karl edwart",male,45,0,0,397,8.05,17,2
+340,0,1,"blackwell, mr. stephen weart",male,45,0,0,25,35.5,55,2
+343,0,2,"collander, mr. erik gustaf",male,28,0,0,106,13.0,17,2
+344,0,2,"sedgwick, mr. charles frederick waddington",male,25,0,0,98,13.0,17,2
+345,0,2,"fox, mr. stanley hubert",male,36,0,0,68,13.0,17,2
+346,1,2,"brown, miss. amelia ""mildred""",female,24,0,0,105,13.0,53,2
+347,1,2,"smith, miss. marion elsie",female,40,0,0,179,13.0,17,2
+348,1,3,"davison, mrs. thomas henry (mary e finck)",female,28,1,0,376,16.1,17,2
+350,0,3,"dimic, mr. jovan",male,42,0,0,184,8.6625,17,2
+351,0,3,"odahl, mr. nils martin",male,23,0,0,390,9.225,17,2
+352,0,1,"williams-lambert, mr. fletcher fellows",male,28,0,0,22,35.0,26,2
+354,0,3,"arnold-franchi, mr. josef",male,25,1,0,287,17.8,17,2
+355,0,3,"yousif, mr. wazli",male,28,0,0,123,7.225,17,0
+356,0,3,"vanden steen, mr. leo peter",male,28,0,0,231,9.5,17,2
+358,0,2,"funk, miss. annie clemmer",female,38,0,0,82,13.0,17,2
+359,1,3,"mcgovern, miss. mary",female,28,0,0,200,7.8792,17,1
+360,1,3,"mockler, miss. helen mary ""ellie""",female,28,0,0,206,7.8792,17,1
+362,0,2,"del carlo, mr. sebastiano",male,29,1,0,478,27.7208,17,0
+364,0,3,"asim, mr. adola",male,35,0,0,484,7.05,17,2
+365,0,3,"o'brien, mr. thomas",male,28,1,0,355,15.5,17,1
+366,0,3,"adahl, mr. mauritz nils martin",male,30,0,0,429,7.25,17,2
+368,1,3,"moussa, mrs. (mantoura boulos)",female,28,0,0,117,7.2292,17,0
+369,1,3,"jermyn, miss. annie",female,28,0,0,46,7.75,17,1
+372,0,3,"wiklund, mr. jakob alfred",male,18,1,0,169,6.4958,17,2
+373,0,3,"beavan, mr. william thomas",male,19,0,0,194,8.05,17,2
+377,1,3,"landergren, miss. aurora adelia",female,22,0,0,430,7.25,17,2
+379,0,3,"betros, mr. tannous",male,20,0,0,124,4.0125,17,0
+380,0,3,"gustafsson, mr. karl gideon",male,19,0,0,239,7.775,17,2
+383,0,3,"tikkanen, mr. juho",male,32,0,0,508,7.925,17,2
+384,1,1,"holverson, mrs. alexander oskar (mary aline towner)",female,35,1,0,28,52.0,17,2
+385,0,3,"plotcharsky, mr. vasil",male,28,0,0,281,7.8958,17,2
+388,1,2,"buss, miss. kate",female,36,0,0,151,13.0,17,2
+389,0,3,"sadlier, mr. matthew",male,28,0,0,348,7.7292,17,1
+390,1,2,"lehmann, miss. bertha",female,17,0,0,469,12.0,17,0
+392,1,3,"jansson, mr. carl olof",male,21,0,0,309,7.7958,17,2
+393,0,3,"gustafsson, mr. johan birger",male,28,2,0,171,7.925,17,2
+396,0,3,"johansson, mr. erik",male,22,0,0,318,7.7958,17,2
+397,0,3,"olsson, miss. elina",female,31,0,0,321,7.8542,17,2
+398,0,2,"mckane, mr. peter david",male,46,0,0,156,26.0,17,2
+399,0,2,"pain, dr. alfred",male,23,0,0,95,10.5,17,2
+400,1,2,"trout, mrs. william h (jessie l)",female,28,0,0,90,12.65,17,2
+401,1,3,"niskanen, mr. juha",male,39,0,0,506,7.925,17,2
+402,0,3,"adams, mr. john",male,26,0,0,211,8.05,17,2
+403,0,3,"jussila, miss. mari aina",female,21,1,0,381,9.825,17,2
+404,0,3,"hakkarainen, mr. pekka pietari",male,28,1,0,511,15.85,17,2
+405,0,3,"oreskovic, miss. marija",female,20,0,0,189,8.6625,17,2
+406,0,2,"gale, mr. shadrach",male,34,1,0,160,21.0,17,2
+407,0,3,"widegren, mr. carl/charles peter",male,51,0,0,236,7.75,17,2
+409,0,3,"birkeland, mr. hans martin monsen",male,21,0,0,177,7.775,17,2
+411,0,3,"sdycoff, mr. todor",male,28,0,0,277,7.8958,17,2
+412,0,3,"hart, mr. henry",male,28,0,0,378,6.8583,17,1
+414,0,2,"cunningham, mr. alfred fleming",male,28,0,0,85,0.0,17,2
+415,1,3,"sundman, mr. johan julian",male,44,0,0,498,7.925,17,2
+416,0,3,"meek, mrs. thomas (annie louise rowley)",female,28,0,0,214,8.05,17,2
+419,0,2,"matthews, mr. william john",male,30,0,0,155,13.0,17,2
+421,0,3,"gheorgheff, mr. stanio",male,28,0,0,302,7.8958,17,0
+422,0,3,"charters, mr. david",male,21,0,0,420,7.7333,17,1
+423,0,3,"zimmerman, mr. leo",male,29,0,0,181,7.875,17,2
+426,0,3,"wiseman, mr. phillippe",male,28,0,0,407,7.25,17,2
+427,1,2,"clarke, mrs. charles v (ada maria winfield)",female,28,1,0,58,26.0,17,2
+428,1,2,"phillips, miss. kate florence (""mrs kate louise phillips marshall"")",female,19,0,0,113,26.0,17,2
+429,0,3,"flynn, mr. james",male,28,0,0,338,7.75,17,1
+430,1,3,"pickard, mr. berk (berk trembisky)",male,32,0,0,487,8.05,41,2
+431,1,1,"bjornstrom-steffansson, mr. mauritz hakan",male,28,0,0,1,26.55,30,2
+432,1,3,"thorneycroft, mrs. percival (florence kate white)",female,28,1,0,370,16.1,17,2
+433,1,2,"louch, mrs. charles alexander (alice adelaide slow)",female,42,1,0,471,26.0,17,2
+434,0,3,"kallio, mr. nikolai erland",male,17,0,0,500,7.125,17,2
+440,0,2,"kvillner, mr. johan henrik johannesson",male,31,0,0,432,10.5,17,2
+442,0,3,"hampe, mr. leon",male,20,0,0,223,9.5,17,2
+443,0,3,"petterson, mr. johan emil",male,25,1,0,243,7.775,17,2
+444,1,2,"reynaldo, ms. encarnacion",female,28,0,0,69,13.0,17,2
+445,1,3,"johannesen-bratthammer, mr. bernt",male,28,0,0,387,8.1125,17,2
+448,1,1,"seward, mr. frederic kimber",male,34,0,0,29,26.55,17,2
+450,1,1,"peuchen, major. arthur godfrey",male,52,0,0,26,30.5,19,2
+452,0,3,"hagland, mr. ingvald olai olsen",male,28,1,0,385,19.9667,17,2
+453,0,1,"foreman, mr. benjamin laventall",male,30,0,0,17,27.75,22,0
+455,0,3,"peduzzi, mr. joseph",male,28,0,0,414,8.05,17,2
+456,1,3,"jalsevac, mr. ivan",male,29,0,0,289,7.8958,17,0
+458,1,1,"kenyon, mrs. frederick r (marion)",female,28,1,0,50,51.8625,35,2
+459,1,2,"toomey, miss. ellen",female,50,0,0,446,10.5,17,2
+460,0,3,"o'connor, mr. maurice",male,28,0,0,363,7.75,17,1
+461,1,1,"anderson, mr. harry",male,48,0,0,54,26.55,43,2
+462,0,3,"morley, mr. william",male,34,0,0,332,8.05,17,2
+463,0,1,"gee, mr. arthur h",male,47,0,0,2,38.5,49,2
+464,0,2,"milling, mr. jacob christian",male,48,0,0,73,13.0,17,2
+465,0,3,"maisner, mr. simon",male,28,0,0,424,8.05,17,2
+466,0,3,"goncalves, mr. manuel estanslas",male,38,0,0,482,7.05,17,2
+467,0,2,"campbell, mr. william",male,28,0,0,85,0.0,17,2
+469,0,3,"scanlan, mr. james",male,28,0,0,326,7.725,17,1
+471,0,3,"keefe, mr. arthur",male,28,0,0,193,7.25,17,2
+472,0,3,"cacic, mr. luka",male,38,0,0,185,8.6625,17,2
+474,1,2,"jerwan, mrs. amin s (marie marthe thuillard)",female,23,0,0,472,13.7917,32,0
+475,0,3,"strandberg, miss. ida sofia",female,22,0,0,396,9.8375,17,2
+476,0,1,"clifford, mr. george quincy",male,28,0,0,0,52.0,1,2
+477,0,2,"renouf, mr. peter henry",male,34,1,0,174,21.0,17,2
+478,0,3,"braund, mr. lewis richard",male,29,1,0,232,7.0458,17,2
+479,0,3,"karlsson, mr. nils august",male,22,0,0,319,7.5208,17,2
+482,0,2,"frost, mr. anthony wood ""archie""",male,28,0,0,86,0.0,17,2
+483,0,3,"rouse, mr. richard henry",male,50,0,0,417,8.05,17,2
+489,0,3,"somerton, mr. francis william",male,30,0,0,403,8.05,17,2
+491,0,3,"hagland, mr. konrad mathias reiersen",male,28,1,0,386,19.9667,17,2
+492,0,3,"windelov, mr. einar",male,21,0,0,492,7.25,17,2
+495,0,3,"stanley, mr. edward roland",male,21,0,0,404,8.05,17,2
+496,0,3,"yousseff, mr. gerious",male,28,0,0,118,14.4583,17,0
+498,0,3,"shellard, mr. frederick william",male,28,0,0,441,15.1,17,2
+500,0,3,"svensson, mr. olof",male,24,0,0,310,7.7958,17,2
+501,0,3,"calic, mr. petar",male,17,0,0,183,8.6625,17,2
+502,0,3,"canavan, miss. mary",female,21,0,0,336,7.75,17,1
+503,0,3,"o'sullivan, miss. bridget mary",female,28,0,0,197,7.6292,17,1
+504,0,3,"laitinen, miss. kristina sofia",female,37,0,0,379,9.5875,17,2
+508,1,1,"bradley, mr. george (""george arthur brayton"")",male,28,0,0,5,26.55,17,2
+509,0,3,"olsen, mr. henry margido",male,28,0,0,427,22.525,17,2
+511,1,3,"daly, mr. eugene patrick",male,29,0,0,373,7.75,17,1
+512,0,3,"webber, mr. james",male,28,0,0,491,8.05,17,2
+513,1,1,"mcgough, mr. james robert",male,36,0,0,451,26.2875,46,2
+515,0,3,"coleff, mr. satio",male,24,0,0,266,7.4958,17,2
+516,0,1,"walker, mr. william anderson",male,47,0,0,354,34.0208,38,2
+517,1,2,"lemore, mrs. (amelia milley)",female,34,0,0,439,10.5,53,2
+518,0,3,"ryan, mr. patrick",male,28,0,0,364,24.15,17,1
+519,1,2,"angle, mrs. william a (florence ""mary"" agnes hughes)",female,36,1,0,66,26.0,17,2
+520,0,3,"pavlovic, mr. stefo",male,32,0,0,291,7.8958,17,2
+522,0,3,"vovk, mr. janko",male,22,0,0,300,7.8958,17,2
+523,0,3,"lahoud, mr. sarkis",male,28,0,0,116,7.225,17,0
+525,0,3,"kassem, mr. fared",male,28,0,0,149,7.2292,17,0
+526,0,3,"farrell, mr. james",male,40,0,0,347,7.75,17,1
+527,1,2,"ridsdale, miss. lucy",female,50,0,0,516,10.5,17,2
+529,0,3,"salonen, mr. johan werner",male,39,0,0,173,7.925,17,2
+532,0,3,"toufik, mr. nakli",male,28,0,0,122,7.2292,17,0
+535,0,3,"cacic, miss. marija",female,30,0,0,182,8.6625,17,2
+537,0,1,"butt, major. archibald willingham",male,45,0,0,16,26.55,10,2
+539,0,3,"risien, mr. samuel beard",male,28,0,0,330,14.5,17,2
+544,1,2,"beane, mr. edward",male,32,1,0,163,26.0,17,2
+547,1,2,"beane, mrs. edward (ethel clarke)",female,19,1,0,163,26.0,17,2
+548,1,2,"padro y manent, mr. julian",male,28,0,0,475,13.8625,17,0
+552,0,2,"sharp, mr. percival james r",male,27,0,0,97,26.0,17,2
+553,0,3,"o'brien, mr. timothy",male,28,0,0,205,7.8292,17,1
+554,1,3,"leeni, mr. fahim (""philip zenni"")",male,22,0,0,114,7.225,17,0
+555,1,3,"ohman, miss. velin",female,22,0,0,247,7.775,17,2
+557,1,1,"duff gordon, lady. (lucille christiana sutherland) (""mrs morgan"")",female,48,1,0,37,39.6,2,0
+560,1,3,"de messemaeker, mrs. guillaume joseph (emma)",female,36,1,0,218,17.4,17,2
+561,0,3,"morrow, mr. thomas rowan",male,28,0,0,365,7.75,17,1
+562,0,3,"sivic, mr. husein",male,40,0,0,299,7.8958,17,2
+563,0,2,"norman, mr. robert douglas",male,28,0,0,61,13.5,17,2
+564,0,3,"simmons, mr. john",male,28,0,0,494,8.05,17,2
+565,0,3,"meanwell, miss. (marion ogden)",female,28,0,0,488,8.05,17,2
+566,0,3,"davies, mr. alfred j",male,24,2,0,405,24.15,17,2
+567,0,3,"stoytcheff, mr. ilia",male,19,0,0,262,7.8958,17,2
+569,0,3,"doharr, mr. tannous",male,28,0,0,142,7.2292,17,0
+570,1,3,"jonsson, mr. carl",male,32,0,0,322,7.8542,17,2
+572,1,1,"appleton, mrs. edward dale (charlotte lamson)",female,53,2,0,38,51.4792,18,2
+573,1,1,"flynn, mr. john irwin (""irving"")",male,36,0,0,452,26.3875,46,2
+574,1,3,"kelly, miss. mary",female,28,0,0,45,7.75,17,1
+575,0,3,"rush, mr. alfred george john",male,16,0,0,406,8.05,17,2
+576,0,3,"patchett, mr. george",male,19,0,0,325,14.5,17,2
+577,1,2,"garside, miss. ethel",female,34,0,0,92,13.0,17,2
+579,0,3,"caram, mrs. joseph (maria elias)",female,28,1,0,144,14.4583,17,0
+580,1,3,"jussila, mr. eiriik",male,32,0,0,504,7.925,17,2
+583,0,2,"downton, mr. william james",male,54,0,0,156,26.0,17,2
+584,0,1,"ross, mr. john hugo",male,36,0,0,42,40.125,0,0
+585,0,3,"paulner, mr. uscher",male,28,0,0,210,8.7125,17,0
+587,0,2,"jarvis, mr. john denzil",male,47,0,0,80,15.0,17,2
+589,0,3,"gilinski, mr. eliezer",male,22,0,0,47,8.05,17,2
+590,0,3,"murdlin, mr. joseph",male,28,0,0,402,8.05,17,2
+591,0,3,"rintamaki, mr. matti",male,35,0,0,499,7.125,17,2
+593,0,3,"elsbury, mr. william james",male,47,0,0,418,7.25,17,2
+595,0,2,"chapman, mr. john henry",male,37,1,0,470,26.0,17,2
+597,1,2,"leitch, miss. jessie wills",female,28,0,0,103,33.0,17,2
+598,0,3,"johnson, mr. alfred",male,49,0,0,448,0.0,17,2
+599,0,3,"boulos, mr. hanna",male,28,0,0,130,7.225,17,0
+602,0,3,"slabenoff, mr. petco",male,28,0,0,270,7.8958,17,2
+603,0,1,"harrington, mr. charles h",male,28,0,0,30,42.4,17,2
+604,0,3,"torber, mr. ernst william",male,44,0,0,333,8.05,17,2
+605,1,1,"homer, mr. harry (""mr e haven"")",male,35,0,0,4,26.55,17,0
+606,0,3,"lindell, mr. edvard bengtsson",male,36,1,0,304,15.55,17,2
+607,0,3,"karaic, mr. milan",male,30,0,0,295,7.8958,17,2
+608,1,1,"daniel, mr. robert williams",male,27,0,0,33,30.5,17,2
+612,0,3,"jardin, mr. jose neto",male,28,0,0,481,7.05,17,2
+613,1,3,"murphy, miss. margaret jane",female,28,1,0,345,15.5,17,1
+614,0,3,"horgan, mr. john",male,28,0,0,362,7.75,17,1
+615,0,3,"brocklebank, mr. william alfred",male,35,0,0,334,8.05,17,2
+618,0,3,"lobb, mrs. william arthur (cordelia k stanlick)",female,26,1,0,422,16.1,17,2
+620,0,2,"gavey, mr. lawrence",male,26,0,0,175,10.5,17,2
+621,0,3,"yasbeck, mr. antoni",male,27,1,0,127,14.4542,17,0
+622,1,1,"kimball, mr. edwin nelson jr",male,42,1,0,36,52.5542,34,2
+624,0,3,"hansen, mr. henry damsgaard",male,21,0,0,308,7.8542,17,2
+625,0,3,"bowen, mr. david john ""dai""",male,21,0,0,383,16.1,17,2
+629,0,3,"bostandyeff, mr. guentcho",male,26,0,0,279,7.8958,17,2
+630,0,3,"o'connell, mr. patrick d",male,28,0,0,207,7.7333,17,1
+632,0,3,"lundahl, mr. johan svensson",male,51,0,0,255,7.0542,17,2
+633,1,1,"stahelin-maeglin, dr. max",male,32,0,0,43,30.5,13,0
+634,0,1,"parr, mr. william henry marsh",male,28,0,0,8,0.0,17,2
+636,1,2,"davis, miss. mary",female,28,0,0,81,13.0,17,2
+637,0,3,"leinonen, mr. antti gustaf",male,32,0,0,507,7.925,17,2
+640,0,3,"thorneycroft, mr. percival",male,28,1,0,370,16.1,17,2
+641,0,3,"jensen, mr. hans peder",male,20,0,0,317,7.8542,17,2
+647,0,3,"cor, mr. liudevit",male,19,0,0,283,7.8958,17,2
+649,0,3,"willey, mr. edward",male,28,0,0,466,7.55,17,2
+650,1,3,"stanley, miss. amy zillah elsie",female,23,0,0,443,7.55,17,2
+651,0,3,"mitkoff, mr. mito",male,28,0,0,276,7.8958,17,2
+653,0,3,"kalvik, mr. johannes halvorsen",male,21,0,0,399,8.4333,17,2
+654,1,3,"o'leary, miss. hanora ""norah""",female,28,0,0,198,7.8292,17,1
+655,0,3,"hegarty, miss. hanora ""nora""",female,18,0,0,340,6.75,17,1
+657,0,3,"radeff, mr. alexander",male,28,0,0,278,7.8958,17,2
+659,0,2,"eitemiller, mr. george floyd",male,23,0,0,166,13.0,17,2
+662,0,3,"badt, mr. mohamed",male,40,0,0,115,7.225,17,0
+663,0,1,"colley, mr. edward pomeroy",male,47,0,0,384,25.5875,48,2
+664,0,3,"coleff, mr. peju",male,36,0,0,267,7.4958,17,2
+665,1,3,"lindqvist, mr. eino william",male,20,1,0,503,7.925,17,2
+667,0,2,"butler, mr. reginald fenton",male,25,0,0,75,13.0,17,2
+668,0,3,"rommetvedt, mr. knud paust",male,28,0,0,178,7.775,17,2
+669,0,3,"cook, mr. jacob",male,43,0,0,415,8.05,17,2
+670,1,1,"taylor, mrs. elmer zebley (juliet cummins wright)",female,28,1,0,57,52.0,25,2
+672,0,1,"davidson, mr. thornton",male,31,1,0,444,52.0,15,2
+674,1,2,"wilhelms, mr. charles",male,31,0,0,94,13.0,17,2
+675,0,2,"watson, mr. ennis hastings",male,28,0,0,88,0.0,17,2
+676,0,3,"edvardsson, mr. gustaf hjalmar",male,18,0,0,305,7.775,17,2
+677,0,3,"sawyer, mr. frederick charles",male,24,0,0,213,8.05,17,2
+678,1,3,"turja, miss. anna sofia",female,18,0,0,382,9.8417,17,2
+681,0,3,"peters, miss. katie",female,28,0,0,202,8.1375,17,1
+683,0,3,"olsvigen, mr. thor anderson",male,20,0,0,388,9.225,17,2
+688,0,3,"dakic, mr. branko",male,19,0,0,282,10.1708,17,2
+689,0,3,"fischer, mr. eberhard thelander",male,18,0,0,311,7.7958,17,2
+694,0,3,"saad, mr. khalil",male,25,0,0,136,7.225,17,0
+696,0,2,"chapman, mr. charles henry",male,52,0,0,104,13.5,17,2
+697,0,3,"kelly, mr. james",male,44,0,0,329,8.05,17,2
+698,1,3,"mullens, miss. katherine ""katie""",female,28,0,0,324,7.7333,17,1
+700,0,3,"humblen, mr. adolf mathias nicolai olsen",male,42,0,0,256,7.65,51,2
+702,1,1,"silverthorne, mr. spencer victor",male,35,0,0,453,26.2875,45,2
+704,0,3,"gallagher, mr. martin",male,25,0,0,350,7.7417,17,1
+705,0,3,"hansen, mr. henrik juul",male,26,1,0,306,7.8542,17,2
+706,0,2,"morley, mr. henry samuel (""mr henry marshall"")",male,39,0,0,113,26.0,17,2
+707,1,2,"kelly, mrs. florence ""fannie""",female,45,0,0,64,13.5,17,2
+708,1,1,"calderhead, mr. edward pennington",male,42,0,0,454,26.2875,45,2
+711,1,1,"mayne, mlle. berthe antonine (""mrs de villiers"")",female,24,0,0,455,49.5042,31,0
+712,0,1,"klaber, mr. herman",male,28,0,0,14,26.55,24,2
+713,1,1,"taylor, mr. elmer zebley",male,48,1,0,57,52.0,25,2
+714,0,3,"larsson, mr. august viktor",male,29,0,0,393,9.4833,17,2
+715,0,2,"greenberg, mr. samuel",male,52,0,0,110,13.0,17,2
+716,0,3,"soholt, mr. peter andreas lauritz andersen",male,19,0,0,258,7.65,52,2
+718,1,2,"troutt, miss. edwina celia ""winnie""",female,27,0,0,212,10.5,42,2
+719,0,3,"mcevoy, mr. michael",male,28,0,0,341,15.5,17,1
+720,0,3,"johnson, mr. malkolm joackim",male,33,0,0,234,7.775,17,2
+722,0,3,"jensen, mr. svend lauritz",male,17,1,0,316,7.0542,17,2
+723,0,2,"gillespie, mr. william henry",male,34,0,0,40,13.0,17,2
+724,0,2,"hodges, mr. henry price",male,50,0,0,108,13.0,17,2
+725,1,1,"chambers, mr. norman campbell",male,27,1,0,34,53.1,50,2
+726,0,3,"oreskovic, mr. luka",male,20,0,0,188,8.6625,17,2
+728,1,3,"mannion, miss. margareth",female,28,0,0,352,7.7375,17,1
+729,0,2,"bryhl, mr. kurt arnold gottfrid",male,25,1,0,79,26.0,17,2
+730,0,3,"ilmakangas, miss. pieta sofia",female,25,1,0,510,7.925,17,2
+732,0,3,"hassan, mr. houssein g n",male,11,0,0,148,18.7875,17,0
+733,0,2,"knight, mr. robert j",male,28,0,0,87,0.0,17,2
+734,0,2,"berriman, mr. william john",male,23,0,0,158,13.0,17,2
+735,0,2,"troupiansky, mr. moses aaron",male,23,0,0,71,13.0,17,2
+736,0,3,"williams, mr. leslie",male,28,0,0,383,16.1,17,2
+739,0,3,"ivanoff, mr. kanio",male,28,0,0,259,7.8958,17,2
+740,0,3,"nankoff, mr. minko",male,28,0,0,274,7.8958,17,2
+741,1,1,"hawksford, mr. walter james",male,28,0,0,48,30.0,37,2
+744,0,3,"mcnamee, mr. neal",male,24,1,0,371,16.1,17,2
+745,1,3,"stranden, mr. juho",male,31,0,0,505,7.925,17,2
+748,1,2,"sinkkonen, miss. anna",female,30,0,0,111,13.0,17,2
+749,0,1,"marvin, mr. daniel warner",male,19,1,0,24,53.1,36,2
+750,0,3,"connaghton, mr. michael",male,31,0,0,208,7.75,17,1
+753,0,3,"vande velde, mr. johannes joseph",male,33,0,0,229,9.5,17,2
+754,0,3,"jonkoff, mr. lalio",male,23,0,0,261,7.8958,17,2
+757,0,3,"carlsson, mr. august sigfrid",male,28,0,0,312,7.7958,17,2
+758,0,2,"bailey, mr. percy andrew",male,18,0,0,164,11.5,17,2
+759,0,3,"theobald, mr. thomas leonard",male,34,0,0,328,8.05,17,2
+761,0,3,"garfirth, mr. john",male,28,0,0,325,14.5,17,2
+762,0,3,"nirva, mr. iisakki antino aijo",male,41,0,0,489,7.125,17,2
+763,1,3,"barah, mr. hanna assi",male,20,0,0,129,7.2292,17,0
+765,0,3,"eklund, mr. hans linus",male,16,0,0,242,7.775,17,2
+767,0,1,"brewe, dr. arthur jackson",male,28,0,0,13,39.6,17,0
+768,0,3,"mangan, miss. mary",female,30,0,0,337,7.75,17,1
+769,0,3,"moran, mr. daniel j",male,28,1,0,364,24.15,17,1
+770,0,3,"gronnestad, mr. daniel danielsen",male,32,0,0,398,8.3625,17,2
+771,0,3,"lievens, mr. rene aime",male,24,0,0,230,9.5,17,2
+772,0,3,"jensen, mr. niels peder",male,48,0,0,315,7.8542,17,2
+774,0,3,"elias, mr. dibo",male,28,0,0,137,7.225,17,0
+776,0,3,"myhrman, mr. pehr fabian oliver malkolm",male,18,0,0,244,7.75,17,2
+777,0,3,"tobin, mr. roger",male,28,0,0,374,7.75,54,1
+778,1,3,"emanuel, miss. virginia ethel",female,5,0,0,335,12.475,17,2
+779,0,3,"kilgannon, mr. thomas j",male,28,0,0,351,7.7375,17,1
+781,1,3,"ayoub, miss. banoura",female,13,0,0,143,7.2292,17,0
+783,0,1,"long, mr. milton clyde",male,29,0,0,21,30.0,40,2
+785,0,3,"ali, mr. william",male,25,0,0,486,7.05,17,2
+786,0,3,"harmer, mr. abraham (david lishin)",male,25,0,0,368,7.25,17,2
+787,1,3,"sjoblom, miss. anna sofia",female,18,0,0,168,7.4958,17,2
+791,0,3,"keane, mr. andrew ""andy""",male,28,0,0,41,7.75,17,1
+792,0,2,"gaskell, mr. alfred",male,16,0,0,89,26.0,17,2
+794,0,1,"hoyt, mr. william fisher",male,28,0,0,458,30.6958,17,0
+795,0,3,"dantcheff, mr. ristiu",male,25,0,0,260,7.8958,17,2
+796,0,2,"otter, mr. richard",male,39,0,0,154,13.0,17,2
+797,1,1,"leader, dr. alice (farnham)",female,49,0,0,51,25.9292,33,2
+798,1,3,"osman, mrs. mara",female,31,0,0,293,8.6833,17,2
+799,0,3,"ibrahim shawah, mr. yousseff",male,30,0,0,141,7.2292,17,0
+801,0,2,"ponesell, mr. martin",male,34,0,0,110,13.0,17,2
+805,1,3,"hedman, mr. oskar arvid",male,27,0,0,249,6.975,17,2
+806,0,3,"johansson, mr. karl johan",male,31,0,0,235,7.775,17,2
+807,0,1,"andrews, mr. thomas jr",male,39,0,0,7,0.0,7,2
+808,0,3,"pettersson, miss. ellen natalia",female,18,0,0,248,7.775,17,2
+809,0,2,"meyer, mr. august",male,39,0,0,102,13.0,17,2
+810,1,1,"chambers, mrs. norman campbell (bertha griggs)",female,33,1,0,34,53.1,50,2
+811,0,3,"alexander, mr. william",male,26,0,0,250,7.8875,17,2
+812,0,3,"lester, mr. james",male,39,0,0,405,24.15,17,2
+813,0,2,"slemen, mr. richard james",male,35,0,0,153,10.5,17,2
+815,0,3,"tomlin, mr. ernest portage",male,30,0,0,331,8.05,17,2
+816,0,1,"fry, mr. richard",male,28,0,0,10,0.0,9,2
+817,0,3,"heininen, miss. wendla maria",female,23,0,0,514,7.925,17,2
+819,0,3,"holm, mr. john fredrik alexander",male,43,0,0,428,6.45,17,2
+822,1,3,"lulic, mr. nikola",male,27,0,0,191,8.6625,17,2
+823,0,1,"reuchlin, jonkheer. john george",male,38,0,0,55,0.0,17,2
+826,0,3,"flynn, mr. john",male,28,0,0,349,6.95,17,1
+829,1,3,"mccormack, mr. thomas joseph",male,28,0,0,343,7.75,17,1
+831,1,3,"yasbeck, mrs. antoni (selini alexander)",female,15,1,0,127,14.4542,17,0
+833,0,3,"saad, mr. amin",male,28,0,0,135,7.2292,17,0
+834,0,3,"augustsson, mr. albert",male,23,0,0,253,7.8542,17,2
+835,0,3,"allum, mr. owen george",male,18,0,0,63,8.3,17,2
+837,0,3,"pasic, mr. jakob",male,21,0,0,190,8.6625,17,2
+838,0,3,"sirota, mr. maurice",male,28,0,0,377,8.05,17,2
+840,1,1,"marechal, mr. pierre",male,28,0,0,39,29.7,28,0
+841,0,3,"alhomaki, mr. ilmari rudolf",male,20,0,0,490,7.925,17,2
+842,0,2,"mudd, mr. thomas charles",male,16,0,0,465,10.5,17,2
+843,1,1,"serepeca, miss. augusta",female,30,0,0,31,31.0,17,0
+844,0,3,"lemberopolous, mr. peter l",male,34,0,0,140,6.4375,17,0
+845,0,3,"culumovic, mr. jeso",male,17,0,0,186,8.6625,17,2
+846,0,3,"abbing, mr. anthony",male,42,0,0,440,7.55,17,2
+848,0,3,"markoff, mr. marin",male,35,0,0,269,7.8958,17,0
+855,0,2,"carter, mrs. ernest courtenay (lilian hughes)",female,44,1,0,93,26.0,17,2
+858,1,1,"daly, mr. peter denis",male,51,0,0,18,26.55,44,2
+860,0,3,"razi, mr. raihed",male,28,0,0,120,7.2292,17,0
+861,0,3,"hansen, mr. claus peter",male,41,2,0,307,14.1083,17,2
+862,0,2,"giles, mr. frederick edward",male,21,1,0,152,11.5,17,2
+863,1,1,"swift, mrs. frederick joel (margaret welles barron)",female,48,0,0,52,25.9292,33,2
+865,0,2,"gill, mr. john william",male,24,0,0,72,13.0,17,2
+866,1,2,"bystrom, mrs. (karolina)",female,42,0,0,78,13.0,17,2
+867,1,2,"duran y more, miss. asuncion",female,27,1,0,476,13.8583,17,0
+868,0,1,"roebling, mr. washington augustus ii",male,31,0,0,456,50.4958,4,2
+869,0,3,"van melkebeke, mr. philemon",male,28,0,0,226,9.5,17,2
+871,0,3,"balkic, mr. cerin",male,26,0,0,297,7.8958,17,2
+873,0,1,"carlsson, mr. frans olof",male,33,0,0,389,5.0,14,2
+874,0,3,"vander cruyssen, mr. victor",male,47,0,0,221,9.0,17,2
+875,1,2,"abelson, mrs. samuel (hannah wizosky)",female,28,1,0,449,24.0,17,0
+876,1,3,"najib, miss. adele kiamie ""jane""",female,15,0,0,132,7.225,17,0
+877,0,3,"gustafsson, mr. alfred ossian",male,20,0,0,391,9.8458,17,2
+878,0,3,"petroff, mr. nedelio",male,19,0,0,268,7.8958,17,2
+879,0,3,"laleff, mr. kristo",male,28,0,0,273,7.8958,17,2
+882,0,3,"markun, mr. johann",male,33,0,0,303,7.8958,17,2
+883,0,3,"dahlberg, miss. gerda ulrika",female,22,0,0,395,10.5167,17,2
+884,0,2,"banfield, mr. frederick james",male,28,0,0,442,10.5,17,2
+885,0,3,"sutehall, mr. henry jr",male,25,0,0,493,7.05,17,2
+887,0,2,"montvila, rev. juozas",male,27,0,0,59,13.0,17,2
+888,1,1,"graham, miss. margaret edith",female,19,0,0,9,30.0,12,2
+890,1,1,"behr, mr. karl howell",male,26,0,0,3,30.0,27,0
+891,0,3,"dooley, mr. patrick",male,32,0,0,361,7.75,17,1

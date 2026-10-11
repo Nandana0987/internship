@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">
+    Dashboard
+</h2>
+<meta http-equiv="refresh" content="5">
+<div class="row">
+
+    <div class="col-md-4">
+
+        <div class="card metric-card">
+
+            <h2>{{ total }}</h2>
+
+            <p>
+                Unique People
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card metric-card">
+
+            <h2>{{ occupancy }}</h2>
+
+            <p>
+                Current Occupancy
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card metric-card">
+
+            <h2>{{ peak }}</h2>
+
+            <p>
+                Peak Occupancy
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<br>
+
+<div class="card p-4">
+
+    <h4>
+        Recent Detections
+    </h4>
+
+    <table class="table table-bordered">
+
+        <thead>
+
+        <tr>
+            <th>ID</th>
+            <th>Person ID</th>
+            <th>Entry Time</th>
+            <th>Last Seen</th>
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        {% for row in records %}
+
+        <tr>
+
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+
+        </tr>
+
+        {% endfor %}
+
+        </tbody>
+
+    </table>
+    <a href="/clear" class="btn btn-danger">
+    Clear All Records
+</a>
+
+</div>
+
+{% endblock %}

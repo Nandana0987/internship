@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI PDF Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="chatbot">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="avatar">🤖</div>
+
+            <div>
+                <h2>AI PDF Assistant</h2>
+                <p>Ask anything from your PDF</p>
+            </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+
+            <input type="file"
+                   id="pdfFile"
+                   accept=".pdf">
+
+            <button onclick="uploadPDF()">
+                📄 Upload PDF
+            </button>
+
+            <div id="uploadStatus"></div>
+
+        </div>
+
+        <!-- Chat Area -->
+        <div id="chat-box" class="chat-box">
+
+            <div class="bot-message">
+                👋 Upload a PDF and ask questions about it.
+            </div>
+
+        </div>
+
+        <!-- Typing Indicator -->
+        <div id="typing" class="typing">
+            🤖 Thinking...
+        </div>
+
+        <!-- Input -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Ask anything from PDF..."
+                onkeypress="handleKey(event)"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <h1>🏠 House Price Prediction </h1>
+
+    <form action="/predict" method="post">
+
+        <input type="number" name="area" placeholder="Area (sq ft)" required>
+        <input type="number" name="bedrooms" placeholder="Bedrooms" required>
+        <input type="number" name="bathrooms" placeholder="Bathrooms" required>
+        <input type="number" name="stories" placeholder="Stories" required>
+        <input type="number" name="parking" placeholder="Parking" required>
+
+        <select name="mainroad">
+            <option value="yes">Main Road Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <select name="guestroom">
+            <option value="yes">Guest Room Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <select name="basement">
+            <option value="yes">Basement Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <select name="hotwaterheating">
+            <option value="yes">Hot Water Heating Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <select name="airconditioning">
+            <option value="yes">Air Conditioning Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <select name="prefarea">
+            <option value="yes">Preferred Area Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <select name="furnishingstatus">
+            <option value="furnished">Furnished</option>
+            <option value="semi-furnished">Semi-Furnished</option>
+            <option value="unfurnished">Unfurnished</option>
+        </select>
+
+        <button type="submit">Predict Price</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            Predicted Price: ₹ {{ prediction }}
+        </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

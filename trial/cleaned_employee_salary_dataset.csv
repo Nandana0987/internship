@@ -1,0 +1,51 @@
+EmployeeID,Name,Department,Experience_Years,Education_Level,Age,Gender,City,Monthly_Salary
+1,employee_1,marketing,15,master,53,female,delhi,111416
+2,employee_2,operations,7,bachelor,25,female,bangalore,95271
+3,employee_3,it,12,high school,51,female,hyderabad,69064
+4,employee_4,operations,8,phd,44,male,delhi,95091
+5,employee_5,operations,15,master,36,female,delhi,132450
+6,employee_6,finance,3,high school,50,male,mumbai,65818
+7,employee_7,it,14,phd,57,male,mumbai,70525
+8,employee_8,it,17,phd,34,female,bangalore,44830
+9,employee_9,it,4,bachelor,53,male,hyderabad,42429
+10,employee_10,operations,18,high school,28,male,mumbai,31893
+11,employee_11,marketing,8,phd,43,male,delhi,141381
+12,employee_12,it,4,master,49,female,hyderabad,104909
+13,employee_13,operations,2,master,23,female,hyderabad,72333
+14,employee_14,finance,6,bachelor,27,male,delhi,28436
+15,employee_15,marketing,10,phd,49,female,mumbai,99290
+16,employee_16,finance,4,high school,49,female,delhi,101213
+17,employee_17,marketing,18,master,41,female,hyderabad,30895
+18,employee_18,operations,12,phd,51,female,chennai,44738
+19,employee_19,hr,2,phd,32,male,chennai,55746
+20,employee_20,marketing,10,bachelor,49,male,bangalore,74377
+21,employee_21,finance,4,master,46,female,delhi,73404
+22,employee_22,operations,14,master,54,female,delhi,79045
+23,employee_23,marketing,16,high school,22,male,bangalore,122888
+24,employee_24,hr,15,master,48,male,bangalore,64790
+25,employee_25,hr,8,high school,34,female,bangalore,132455
+26,employee_26,it,14,master,24,male,hyderabad,30600
+27,employee_27,it,8,bachelor,27,female,delhi,119660
+28,employee_28,finance,16,master,29,female,hyderabad,118179
+29,employee_29,marketing,13,high school,48,male,bangalore,65764
+30,employee_30,marketing,18,high school,30,male,delhi,99543
+31,employee_31,it,15,bachelor,54,female,hyderabad,70714
+32,employee_32,marketing,13,master,45,female,hyderabad,81835
+33,employee_33,marketing,9,master,36,male,bangalore,127946
+34,employee_34,hr,15,bachelor,53,female,delhi,134616
+35,employee_35,it,13,master,53,male,bangalore,130983
+36,employee_36,operations,1,master,45,female,delhi,98744
+37,employee_37,it,7,high school,33,male,chennai,81491
+38,employee_38,operations,9,master,23,male,mumbai,149123
+39,employee_39,hr,1,master,24,male,mumbai,43589
+40,employee_40,finance,12,bachelor,38,female,mumbai,68484
+41,employee_41,marketing,8,bachelor,23,female,bangalore,107989
+42,employee_42,hr,11,phd,23,male,chennai,61212
+43,employee_43,marketing,19,high school,49,female,delhi,68525
+44,employee_44,finance,17,master,44,male,hyderabad,72202
+45,employee_45,finance,8,master,53,male,delhi,57635
+46,employee_46,hr,3,phd,54,female,hyderabad,88208
+47,employee_47,finance,3,master,22,female,delhi,58828
+48,employee_48,operations,1,high school,40,male,chennai,43711
+49,employee_49,finance,5,phd,23,female,hyderabad,28420
+50,employee_50,marketing,10,high school,47,female,bangalore,121752

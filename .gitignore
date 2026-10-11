@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+.env
+.ipynb_checkpoints/
+work/WELFake_Dataset.csv
+trial/CreditCard_With_Anomaly_Label.csv
+unsupervised/creditcard.csv
+drowsiness/seatbelt_model.h5
+drowsiness/seatbelt_model_final.h5
+trial/fake.csv
+work/Fake.csv
+drowsiness/recordings/

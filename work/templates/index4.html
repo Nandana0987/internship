@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Fake News Detection System
+</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',
+filename='style4.css') }}">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>
+📰 Fake News Detection System
+</h1>
+
+<p>
+Detect Fake and Real News using Machine Learning
+</p>
+
+</div>
+
+<div class="card">
+
+<form action="/predict"
+method="POST">
+
+<textarea
+name="news"
+placeholder="Paste News Article or Headline Here..."
+required>
+</textarea>
+
+<button type="submit">
+
+Detect News
+
+</button>
+
+</form>
+
+{% if prediction %}
+
+<div class="result-box">
+
+<h2>{{ prediction }}</h2>
+
+</div>
+
+<div class="confidence-box">
+
+<h3>Confidence Score</h3>
+
+<h1>{{ confidence }}%</h1>
+
+</div>
+
+{% endif %}
+
+<div class="accuracy-box">
+
+<h3>Model Accuracy</h3>
+
+<h2>{{ accuracy }}%</h2>
+
+</div>
+
+<div class="chart-container">
+
+<canvas id="accuracyChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const ctx =
+document.getElementById(
+'accuracyChart'
+);
+
+new Chart(ctx, {
+
+type:'doughnut',
+
+data:{
+
+labels:[
+'Accuracy',
+'Remaining'
+],
+
+datasets:[{
+
+data:[
+{{ accuracy }},
+100 - {{ accuracy }}
+],
+
+borderWidth:0
+
+}]
+},
+
+options:{
+
+responsive:true,
+
+plugins:{
+
+legend:{
+
+labels:{
+color:'white'
+}
+
+}
+
+}
+
+}
+
+});
+
+</script>
+
+</body>
+</html>

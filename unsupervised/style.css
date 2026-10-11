@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(135deg,#141e30,#243b55);
+    min-height: 100vh;
+    color: white;
+    font-family: Arial;
+}
+
+.sidebar {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.main-content {
+    padding: 40px;
+}
+
+.hero-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.result-card {
+    background: white;
+    color: black;
+    border-radius: 20px;
+}

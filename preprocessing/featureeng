@@ -1,0 +1,104 @@
+import pandas as pd
+
+# --------------------------
+# Load Dataset
+# --------------------------
+df = pd.read_csv("1/sales_data.csv")
+
+# --------------------------
+# FEATURE ENGINEERING
+# --------------------------
+
+# 1. Total Cost
+df["Total_Cost"] = (
+    df["Unit_Cost"] *
+    df["Quantity_Sold"]
+)
+
+# 2. Total Revenue
+df["Total_Revenue"] = (
+    df["Unit_Price"] *
+    df["Quantity_Sold"]
+)
+
+# 3. Profit
+df["Profit"] = (
+    df["Total_Revenue"] -
+    df["Total_Cost"]
+)
+
+# 4. Profit Margin (%)
+df["Profit_Margin"] = (
+    df["Profit"] /
+    df["Total_Revenue"]
+) * 100
+
+# 5. Discounted Sales Amount
+df["Discounted_Sales"] = (
+    df["Sales_Amount"] -
+    (
+        df["Sales_Amount"] *
+        df["Discount"] / 100
+    )
+)
+
+# 6. Convert Date Column
+df["Sale_Date"] = pd.to_datetime(
+    df["Sale_Date"]
+)
+
+# 7. Extract Year
+df["Year"] = df["Sale_Date"].dt.year
+
+# 8. Extract Month
+df["Month"] = df["Sale_Date"].dt.month
+
+# 9. Extract Day
+df["Day"] = df["Sale_Date"].dt.day
+
+# 10. Extract Day Name
+df["Day_Name"] = (
+    df["Sale_Date"]
+    .dt.day_name()
+)
+
+# 11. Weekend / Weekday Feature
+df["Is_Weekend"] = (
+    df["Sale_Date"]
+    .dt.dayofweek >= 5
+)
+
+# 12. Average Price Per Item
+df["Price_Per_Item"] = (
+    df["Sales_Amount"] /
+    df["Quantity_Sold"]
+)
+
+
+# 14. Sales Category
+df["Sales_Category"] = pd.cut(
+    df["Sales_Amount"],
+    bins=3,
+    labels=[
+        "Low Sales",
+        "Medium Sales",
+        "High Sales"
+    ]
+)
+
+# --------------------------
+# Save Feature Engineered Dataset
+# --------------------------
+
+df.to_csv(
+    "feature_engineered_sales_data.csv",
+    index=False
+)
+
+# --------------------------
+# Output
+# --------------------------
+
+print("Feature Engineering Completed!")
+print(df.head())
+print(df.columns)

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>
+    Detection Records
+</h2>
+
+<div class="card p-4">
+
+<table class="table table-striped">
+
+    <thead>
+
+    <tr>
+        <th>ID</th>
+        <th>Person ID</th>
+        <th>Entry Time</th>
+        <th>Last Seen</th>
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    {% for row in records %}
+
+    <tr>
+
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+
+    </tr>
+
+    {% endfor %}
+
+    </tbody>
+
+</table>
+
+</div>
+
+{% endblock %}

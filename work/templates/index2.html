@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h1>🎓 Student Performance Prediction System</h1>
+            <p>Machine Learning Based Exam Score Prediction using Linear Regression</p>
+        </div>
+
+        <!-- MAIN CARD -->
+        <div class="card">
+
+            <form action="/predict" method="POST">
+
+                <input type="number" name="Hours_Studied" placeholder="Hours Studied" required>
+
+                <input type="number" name="Attendance" placeholder="Attendance (%)" required>
+
+                <input type="number" name="Sleep_Hours" placeholder="Sleep Hours" required>
+
+                <input type="number" name="Previous_Scores" placeholder="Previous Scores" required>
+
+                <input type="number" name="Tutoring_Sessions" placeholder="Tutoring Sessions" required>
+
+                <input type="number" name="Physical_Activity" placeholder="Physical Activity" required>
+
+                <select name="Parental_Involvement">
+                    <option value="">Parental Involvement</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <select name="Access_to_Resources">
+                    <option value="">Access to Resources</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <select name="Extracurricular_Activities">
+                    <option value="">Extracurricular Activities</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+
+                <select name="Motivation_Level">
+                    <option value="">Motivation Level</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <select name="Internet_Access">
+                    <option value="">Internet Access</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+
+                <select name="Family_Income">
+                    <option value="">Family Income</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <select name="Teacher_Quality">
+                    <option value="">Teacher Quality</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <select name="School_Type">
+                    <option value="">School Type</option>
+                    <option>Public</option>
+                    <option>Private</option>
+                </select>
+
+                <select name="Peer_Influence">
+                    <option value="">Peer Influence</option>
+                    <option>Positive</option>
+                    <option>Neutral</option>
+                    <option>Negative</option>
+                </select>
+
+                <select name="Learning_Disabilities">
+                    <option value="">Learning Disabilities</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+
+                <select name="Parental_Education_Level">
+                    <option value="">Parental Education</option>
+                    <option>High School</option>
+                    <option>College</option>
+                    <option>Postgraduate</option>
+                </select>
+
+                <select name="Distance_from_Home">
+                    <option value="">Distance from Home</option>
+                    <option>Near</option>
+                    <option>Moderate</option>
+                    <option>Far</option>
+                </select>
+
+                <select name="Gender">
+                    <option value="">Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+
+                <button type="submit">
+                    Predict Exam Score
+                </button>
+
+            </form>
+
+            {% if prediction %}
+
+            <div class="result-box">
+                <h2>📊 Predicted Exam Score</h2>
+                <h1>{{ prediction }}</h1>
+            </div>
+
+            {% endif %}
+
+            <div class="accuracy-box">
+                <h3>Model Accuracy (R² Score)</h3>
+                <h2>{{ accuracy }}%</h2>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="accuracyChart"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const ctx = document.getElementById('accuracyChart');
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Accuracy', 'Remaining'],
+                datasets: [{
+                    data: [{{ accuracy }}, 100 - {{ accuracy }}],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

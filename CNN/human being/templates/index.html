@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Age Gender Ethnicity</title>
+
+<style>
+
+body{
+background:url('/static/bg.jpg');
+background-size:cover;
+font-family:Arial;
+}
+
+.container{
+width:500px;
+margin:auto;
+margin-top:100px;
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>
+Age Gender Ethnicity Prediction
+</h2>
+
+<form
+action="/predict"
+method="post"
+enctype="multipart/form-data">
+
+<input
+type="file"
+name="file"
+required>
+
+<br><br>
+
+<button type="submit">
+Predict
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
